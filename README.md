@@ -1,46 +1,32 @@
-# Getting Started with Create React App
+# 🚨 실행 전 유의사항 !
+- 기한임박으로 대부분의 기능을 구현하지 못한 껍데기 입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 집중해서 만든 부분
+📦src  
+ ┣ 📂views  
+ ┃ ┣ 📂components  
+ ┃ ┃ ┣ 📂Content  
+ ┃ ┃ ┗ 📂Navi  
+ ┃ ┣ 📂customComponents  🚨 해당  폴더에 있는 컴포넌트들의 재사용성을 위한 부분에 집중했습니다.  
+ ┃ ┃ ┣ 📂Box  
+ ┃ ┃ ┃ ┣ 📜Box.module.scss  
+ ┃ ┃ ┃ ┗ 📜index.tsx  
+ ┃ ┃ ┣ 📂Button  
+ ┃ ┃ ┃ ┣ 📜Button.module.scss  
+ ┃ ┃ ┃ ┗ 📜index.tsx  
+ ┃ ┃ ┣ 📂CheckBox  
+ ┃ ┃ ┃ ┣ 📜CheckBox.module.scss   
+ ┃ ┃ ┃ ┗ 📜index.tsx   
+ ┃ ┃ ┣ 📂Header  
+ ┃ ┃ ┃ ┣ 📜Header.module.scss    
+ ┃ ┃ ┃ ┗ 📜index.tsx    
+ ┃ ┃ ┗ 📂Intro  
+ ┃ ┃ ┃ ┣ 📜Intro.module.scss  
+ ┃ ┃ ┃ ┗ 📜index.tsx  
+ ┗ ┗ 📂pages  
+ 
+ 
+ 예시 : 아래는 실제 customComponents들을 재사용하는 모습  
+<img width="700" alt="스크린샷 2021-07-03 오전 12 03 51" src="https://user-images.githubusercontent.com/54474732/124294269-75067e00-db92-11eb-8b90-b9383ca94d6f.png">
+<img width="700" alt="스크린샷 2021-07-03 오전 12 05 25" src="https://user-images.githubusercontent.com/54474732/124294286-7768d800-db92-11eb-95d1-0c5a03bcf290.png">
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
