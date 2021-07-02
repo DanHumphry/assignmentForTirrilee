@@ -1,0 +1,36 @@
+.HomeMain_bg {
+  padding: 40px 42px 11px 12px;
+  object-fit: contain;
+  background-color: #f9f9f9;
+  .homeTitle {
+    height: 77px;
+    font-family: NotoSansCJKKR;
+    font-size: 28px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: -0.84px;
+    text-align: left;
+    color: #000000;
+    margin: 0 auto 9px auto;
+    width: 330px;
+    .leftH3 {
+      float: left;
+    }
+    .rightH3 {
+      float : right;
+    }
+  }
+  .homeImg {
+    width: 290px;
+    height: 243px;
+    margin: 0 auto
+  }
+}
+
+.HomeFooter_bg {
+  width: 350px;
+  height: 60px;
+  margin: 60px auto 0 auto;
+}
