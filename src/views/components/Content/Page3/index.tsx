@@ -1,29 +1,44 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from 'reducers';
 import Intro from 'views/customComponents/Intro';
 import Box from 'views/customComponents/Box';
 import Header from 'views/customComponents/Header';
 import Button from 'views/customComponents/Button';
 import css from 'App.module.scss';
 
-const Step_2 = () => {
+function Page3() {
+  const { currentContent } = useSelector((store: RootState) => store.count);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Intro
-        step={3}
-        title="작업 페이지를 선정해봅시다."
-        description="이전단계에서 설명한 기본금액에 페이지 수를 곱합니다."
+        step={currentContent}
+        title="먼저 개발범위를 생각해보아요."
+        description={['개발범위로 기본금액을 정할 수 있어요!', '기본금액']}
       />
       <div className={css.mainBackgroundDiv}>
         <Header
-          title="작업하려는 페이지의 양은 어떻게 되나요?"
+          title="디자인이 되어 있나요?"
           sub={[
-            '혹시 몇 페이지가 나올지에 대해 감이 안잡히시나요?',
-            '간단한 정보구조도(I.A)를 설계해보시면 ',
-            '선택에 많은 도움이 될꺼에요!',
+            '아직 구체적인 디자인이 진행되어 있지 않아도 돼요!',
+            '티릴리의 디자이너들과 함께 멋진 디자인을 만들어봐요!',
           ]}
         />
-        <Box title="~20p" price="기본 금액 x1" height="60px" display="flex" />
-        <Box title="21p ~ 30p" price="기본 금액 x2" height="60px" display="flex" />
+        <Box
+          title="네! 디자인이 되어 있어요."
+          description="멋져요! 개발을 할 수 있도록 디자인을 함께 보완해요."
+          price="+50만원"
+        />
+        <Box
+          title="앗.. 디자인은 없어요."
+          description="괜찮아요 :) 티릴리와 함께 디자인을 진행해봐요!"
+          price="+100만원"
+        />
       </div>
       <div className={css.flexDisplayButtonDiv}>
         <Button name="이전 단계" />
@@ -31,5 +46,5 @@ const Step_2 = () => {
       </div>
     </>
   );
-};
-export default Step_2;
+}
+export default Page3;

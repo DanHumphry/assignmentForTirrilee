@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeImg from 'assist/Service_illust.svg';
 import Button from 'views/customComponents/Button';
-import css from 'views/components/Estimate/Content/HomePage/HomePage.module.scss';
+import css from 'views/components/Content/HomePage/HomePage.module.scss';
 import AppCss from 'App.module.scss';
 
 function Home() {
