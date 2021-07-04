@@ -1,5 +1,6 @@
 # 🚨 실행 전 유의사항 !
-- 기한임박으로 대부분의 기능을 구현하지 못한 껍데기 입니다.
+- 기한이 지나고도 수정된 소스입니다.
+- 기한이 지나기 전 소스는 : https://github.com/DanHumphry/assignmentForTirrilee/tree/707a0447520a868d24fc9c4ab121fa0306eac990
 
 ## 집중해서 만든 부분
 📦src  
